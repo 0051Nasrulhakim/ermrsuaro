@@ -9,7 +9,7 @@
     <div class="wrapper" style="display: flex; border-bottom: 1px solid #c2c2c2ff; padding: 0.5%;">
         <div class="text" style="width: 22%;">TRIASE IGD</div>
         <div class="text" style="width: 10%; text-align: center;">
-            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+            <input class="form-check-input" type="checkbox" value="" id="data_triase_igd" disabled>
         </div>
         <div class="text" style="width: 10%; text-align: center;">
             <button class="btn btn-sm btn-primary">Buka</button>
@@ -19,7 +19,7 @@
     <div class="wrapper" style="display: flex; border-bottom: 1px solid #c2c2c2ff; padding: 0.5%;">
         <div class="text" style="width: 22%;">AWAL MEDIS IGD</div>
         <div class="text" style="width: 10%; text-align: center;">
-            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+            <input class="form-check-input" type="checkbox" value="" id="penilaian_medis_igd" disabled>
         </div>
         <div class="text" style="width: 10%; text-align: center;">
             <button class="btn btn-sm btn-primary">Buka</button>
@@ -29,7 +29,7 @@
     <div class="wrapper" style="display: flex; border-bottom: 1px solid #c2c2c2ff; padding: 0.5%;">
         <div class="text" style="width: 22%;">AWAL MEDIS IGD PSIKIATRI</div>
         <div class="text" style="width: 10%; text-align: center;">
-            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+            <input class="form-check-input" type="checkbox" value="" id="rmAwalMedisIGDPsikiatri" disabled>
         </div>
         <div class="text" style="width: 10%; text-align: center;">
             <button class="btn btn-sm btn-primary">Buka</button>
@@ -39,7 +39,7 @@
     <div class="wrapper" style="display: flex; border-bottom: 1px solid #c2c2c2ff; padding: 0.5%;">
         <div class="text" style="width: 22%;">AWAL KEPERAWATAN IGD</div>
         <div class="text" style="width: 10%; text-align: center;">
-            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+            <input class="form-check-input" type="checkbox" value="" id="rmAwalMedisKepIGD" disabled>
         </div>
         <div class="text" style="width: 10%; text-align: center;">
             <button class="btn btn-sm btn-primary">Buka</button>
@@ -49,7 +49,7 @@
     <div class="wrapper" style="display: flex; border-bottom: 1px solid #c2c2c2ff; padding: 0.5%;">
         <div class="text" style="width: 22%;">PENGKAJIAN RESTRAIN</div>
         <div class="text" style="width: 10%; text-align: center;">
-            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+            <input class="form-check-input" type="checkbox" value="" id="checkDefault" disabled>
         </div>
         <div class="text" style="width: 10%; text-align: center;">
             <button class="btn btn-sm btn-primary">Buka</button>

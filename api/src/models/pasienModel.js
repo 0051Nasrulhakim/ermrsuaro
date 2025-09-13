@@ -22,24 +22,29 @@ const pasienRajalModel = {
     findRegistrasi: (noRm, callback) => {
         const query = `
             SELECT 
-                reg_periksa.*, pasien.nm_pasien AS nama_pasien , poliklinik.nm_poli AS nama_poli, penjab.png_jawab AS jenis_bayar, dokter.nm_dokter AS nama_dokter
+                reg_periksa.*, 
+                pasien.nm_pasien AS nama_pasien, 
+                poliklinik.nm_poli AS nama_poli, 
+                penjab.png_jawab AS jenis_bayar, 
+                dokter.nm_dokter AS nama_dokter
             FROM 
                 reg_periksa
             JOIN
-                pasien on reg_periksa.no_rkm_medis = pasien.no_rkm_medis 
+                pasien ON reg_periksa.no_rkm_medis = pasien.no_rkm_medis 
             JOIN 
-                poliklinik on reg_periksa.kd_poli = poliklinik.kd_poli
+                poliklinik ON reg_periksa.kd_poli = poliklinik.kd_poli
             JOIN
-                penjab on reg_periksa.kd_pj = penjab.kd_pj
+                penjab ON reg_periksa.kd_pj = penjab.kd_pj
             JOIN 
-                dokter on reg_periksa.kd_dokter = dokter.kd_dokter
+                dokter ON reg_periksa.kd_dokter = dokter.kd_dokter
             WHERE 
                 reg_periksa.no_rkm_medis = ? 
-            AND 
-                reg_periksa.stts != 'Batal' 
+                AND reg_periksa.stts != 'Batal'
+                AND reg_periksa.tgl_registrasi <= CURDATE()
             ORDER BY reg_periksa.tgl_registrasi DESC
-            `
-        db.query(query, [noRm], callback)
+        `;
+
+        db.query(query, [noRm], callback);
     }
 
     
